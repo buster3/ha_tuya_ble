@@ -300,6 +300,14 @@ devices_database: dict[str, TuyaBLECategoryInfo] = {
             ),
         },
     ),
+    "ggq": TuyaBLECategoryInfo(
+        products={
+            "klpcpgrh":  # device product_id
+            TuyaBLEProductInfo(
+                name="Bluetooth water timer",
+            ),
+        },
+    ),
 }
 
 

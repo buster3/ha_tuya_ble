@@ -294,17 +294,14 @@ devices_database: dict[str, TuyaBLECategoryInfo] = {
     ),
     "ggq": TuyaBLECategoryInfo(
         products={
-            "6pahkcau":  # device product_id
-            TuyaBLEProductInfo(
-                name="Irrigation computer",
-            ),
-        },
-    ),
-    "ggq": TuyaBLECategoryInfo(
-        products={
-            "klpcpgrh":  # device product_id
-            TuyaBLEProductInfo(
-                name="Bluetooth water timer",
+            **dict.fromkeys(
+                [
+                "6pahkcau", 
+                "klpcpgrh",
+                ],  # device product_id
+                TuyaBLEProductInfo( 
+                    name="Irrigation computer",
+                ),
             ),
         },
     ),
